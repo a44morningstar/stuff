@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:label="Главная"
+        android:name="ru.kirovsky.myapplication.ui.HomeFragment2">
+        <action
+            android:id="@+id/action_homeFragment2_to_promoFragment"
+            android:label="Акции"
+            android:name="ru.kirovsky.myapplication.ui.PromoFragment"
+            app:destination="@id/promoFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment android:id="@+id/catalogFragment"
+        android:label="Каталог"
+        android:name="ru.kirovsky.myapplication.ui.CatalogFragment">
+        <action
+            android:id="@+id/action_catalogFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment android:id="@+id/searchFragment"
+        android:label="Поиск"
+        android:name="ru.kirovsky.myapplication.ui.SearchFragment"/>
+    <fragment android:id="@+id/cartFragment"
+        android:label="Корзина"
+        android:name="ru.kirovsky.myapplication.ui.CartFragment"/>
+    <fragment android:id="@+id/profileFragment"
+        android:label="Профиль"
+        android:name="ru.kirovsky.myapplication.ui.ProfileFragment">
+        <action
+            android:id="@+id/action_profileFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/promoFragment"
+        android:label="Акции"
+        android:name="ru.kirovsky.myapplication.ui.PromoFragment"/>
+    <fragment android:id="@+id/favoritesFragment"
+        android:label="Избранное"
+        android:name="ru.kirovsky.myapplication.ui.FavoritesFragment"/>
+    <fragment android:id="@+id/authFragment"
+        android:label="Вход"
+        android:name="ru.kirovsky.myapplication.ui.AuthFragment"/>
+    <fragment android:id="@+id/productDetailFragment"
+        android:label="Товар"
+        android:name="ru.kirovsky.myapplication.ui.ProductDetailFragment"/>
+    <fragment android:id="@+id/contactsFragment"
+        android:label="Контакты"
+        android:name="ru.kirovsky.myapplication.ui.ContactsFragment"/>
+</navigation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryVariant">@color/red_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/red_light</item>
+        <item name="colorSecondaryVariant">@color/red_primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:statusBarColor">@color/red_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="actionBarStyle">@style/Widget.MyApplication.ActionBar</item>
+
+        <item name="bottomNavigationStyle">@style/Widget.MyApplication.BottomNavigation</item>
+    </style>
+
+    <style name="Widget.MyApplication.ActionBar" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="background">@color/red_primary</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="Widget.MyApplication.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">@color/white</item>
+        <item name="itemIconTint">@drawable/bottom_nav_colors</item>
+        <item name="itemTextColor">@drawable/bottom_nav_colors</item>
+    </style>
+</resources>
